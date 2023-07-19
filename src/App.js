@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import Nav from "./components/nav";
 import GlobalStyle from "./components/globalstyle";
 import Main from "./components/main";
+import History from "./components/history";
+
 function App() {
   return (
     <div className="App">

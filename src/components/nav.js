@@ -3,6 +3,7 @@ import { MdClose, MdDehaze, MdKeyboardArrowDown } from "react-icons/md";
 import { useEffect, useState } from "react";
 
 const MainContainer = styled.div`
+  z-index: 999;
   width: 100%;
   height: fit-content;
   display: flex;

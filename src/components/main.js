@@ -1,4 +1,6 @@
 import { styled } from "styled-components"
+import History from "./history";
+import Customer from "./customer";
 
 const MainContainer = styled.div`
   width: 100%;
@@ -9,14 +11,17 @@ const MainContainer = styled.div`
   background-size: cover;
   background-attachment: fixed;
 `
-const Test = styled.div`
+const A = styled.div`
   width: 100%;
-  height: 2000px;
+  height: 100px;
+  /* border: 2px solid red; */
 `
 const Main = () => {
   return (
     <MainContainer>
-      <Test>1</Test>
+      <A/>
+      <History/>
+      <Customer/>
     </MainContainer>
   )
 };
