@@ -3,11 +3,15 @@ import { keyframes, styled } from "styled-components";
 const HistoryBox = styled.div`
   width: 100%;
   height: fit-content;
-  background-color: #333;
+  background-color: #222;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 800px) {
+    padding: 50px 0px 50px 0px;
+  }
 `
 const Title = styled.span`
   font-size: 34px;
@@ -15,12 +19,18 @@ const Title = styled.span`
   color: #fff;
   margin-bottom: 10px;
   &.mb {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
   }
 `
 const SubTitle = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 `
 const TimelineBox = styled.div`
   width: fit-content;
@@ -31,6 +41,9 @@ const TimelineBox = styled.div`
   margin-top: 50px;
   padding-left: 80px;
   position: relative;
+  @media screen and (max-width: 600px) {
+    padding-left: 30px;
+  }
 `
 const Circle = styled.div`
   width: 12px;
@@ -39,6 +52,11 @@ const Circle = styled.div`
   background-color: rgb(0, 75, 155);
   background-color: #fff;
   box-shadow: 0px 0px 4px 1px rgb(255, 255, 255, 0.9);
+  @media screen and (max-width: 600px) {
+    width: 8px;
+    height: 8px;
+    box-shadow: 0px 0px 4px 1px rgb(255, 255, 255, 0.9);
+  }
 `
 const fadeIn = keyframes`
   0% { opacity: 0 }
@@ -69,6 +87,15 @@ const TLItem = styled.div`
     display: flex;
     flex-direction: column;
   }
+  @media screen and (max-width: 600px) {
+    .year {
+      font-size: 18px;
+      margin: 0px 5px 0px 10px;
+    }
+    .text {
+      font-size: 10px;
+    }
+  }
 `
 const bar = keyframes`
   0% { height: 0% }
@@ -94,6 +121,10 @@ const Progress = styled.div`
     width:5px;
     background-color: rgb(0, 75, 155);
     animation: ${bar} 2.5s linear forwards;
+  }
+  @media screen and (max-width: 600px) {
+    left: 32.5px;
+    width: 2px;
   }
 `
 const History = () => {

@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
+    color: #111;
+    font-family: 'NanumBarunGothic';
   }
   div {
     box-sizing: border-box;
